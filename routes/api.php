@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/createLead', [\App\Http\Controllers\SolarEndPointsController::class, 'createLead']);
+Route::get('/updateLead{id?}', [\App\Http\Controllers\SolarEndPointsController::class, 'updateLead']);
+Route::get('/deleteLead/{id?}', [\App\Http\Controllers\SolarEndPointsController::class, 'deleteLead']);
+Route::get('/readLead/{id?}', [\App\Http\Controllers\SolarEndPointsController::class, 'readLead']);
+Route::get('/getQualityLead/{quality?}', [\App\Http\Controllers\SolarEndPointsController::class, 'getQualityLead']);
