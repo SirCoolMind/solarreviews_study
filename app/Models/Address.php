@@ -27,7 +27,6 @@ class Address extends Model
     public function lead()
     {
       return $this->belongsTo('App\Lead');
-
     }
 
 }

@@ -40,6 +40,6 @@ class Lead extends Model
 
     public function address()
     {
-        return $this->hasOne(Address::class)->withTrashed();
+        return $this->hasOne(Address::class);
     }
 }

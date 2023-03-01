@@ -9,4 +9,5 @@ interface LeadRepositoryInterface
     public function readLeadInDatabase(int $leadId);
     public function updateLeadInDatabase(int $leadId, array $newDetails);
     public function queryDiffrentTypeOfLeads(string $quality);
+    public function createLeadInDatabase(array $request);
 }
